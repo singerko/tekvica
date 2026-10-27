@@ -6,6 +6,8 @@ Animatronická halloweenska tekvica s dvoma okrúhlymi LCD očami, dvojicou lank
 - **Pico B** ovláda štyri servá a LED pás WS2812,
 - dosky spolu komunikujú cez UART – Pico A pri každom gagu povie Picu B, aké gesto a svetlo má urobiť.
 
+Pri realizácii bola použitá tekvica s priemerom približne **30 cm**. Pri inej veľkosti treba pred tlačou alebo vyrezaním otvorov skontrolovať miesto pre vnútornú krabicu, powerbanku, držiaky očí a bočné výstupy chápadiel.
+
 <p align="center">
   <img src="obrazky/nahlad_na_zapojenu_tekvicu.png" width="760" alt="Hotová animatronická tekvica s očami a chápadlami"><br>
   <sub>Hotová mechanická a elektronická zostava pred vložením do tekvice.</sub>
@@ -138,7 +140,7 @@ Hodnota `part="assembly"` zobrazí mechanickú zostavu. Konzola OpenSCAD vypíš
 
 Vizualizačný model celej zostavy. Načíta `chapadlo.scad`, pridá priehľadnú tekvicu, powerbanku, elektroniku, kabeláž, displeje a ruky. Slúži hlavne na kontrolu rozmiestnenia cez **F5**, nie na export jednotlivých tlačových dielov. Súbor `chapadlo.scad` musí zostať v rovnakom adresári.
 
-Najdôležitejšie voľby sú `show_pumpkin`, `show_lid`, `pumpkin_r`, `pumpkin_h` a `arm_bend`. Rozmery upravte podľa konkrétnej tekvice ešte pred vyrezaním otvorov.
+Najdôležitejšie voľby sú `show_pumpkin`, `show_lid`, `pumpkin_r`, `pumpkin_h` a `arm_bend`. Referenčná realizácia používala tekvicu s priemerom približne **30 cm**; rozmery modelu upravte podľa konkrétnej tekvice ešte pred vyrezaním otvorov.
 
 ## Zapojenie
 
@@ -182,11 +184,12 @@ Pri kóde očí je aktívne `SWAP_PHYSICAL_EYES=1`: vetva `gfxL` je na hotovej z
 
 | Čas | Správanie |
 |---|---|
-| 05:30 – 21:45 | deň: náhodné gagy, gestá a svetlá |
-| 21:45 – 22:00 | zaspávanie: pomalšie pohyby, klesajúce viečka, stmievanie |
-| 22:00 – 05:30 | spánok: zatvorené oči, občas sa pootvoria a pozrú („peek“) |
+| 05:30 | prebúdzanie: oči sa postupne otvoria a aktivujú |
+| 05:30 – 21:45 | denná prevádzka: postupne sa spúšťajú náhodne vybrané animácie očí, gestá chápadiel a svetelné efekty |
+| 21:45 – 22:00 | pomalé zaspávanie: oči čoraz častejšie klipkajú, viečka postupne klesajú a displeje sa stmievajú |
+| 22:00 – 05:30 | úsporný režim: oči spia so zatvorenými viečkami a chápadlá sú vypnuté/nepohybujú sa; oči sa môžu iba občas krátko pootvoriť („peek“) |
 
-Čas sa berie z DS3231. Ak RTC nemá správny čas, nastavte ho príkazom `T=HH:MM`. Počas spánku Pico A nespúšťa gagy ani príkaz `G=číslo`.
+Čas sa berie z DS3231. Ak RTC nemá správny čas, nastavte ho príkazom `T=HH:MM`. Od 21:45 systém plynulo prechádza do spánku a o 22:00 zastaví animácie aj pohyb chápadiel. Počas spánku Pico A nespúšťa gagy ani príkaz `G=číslo`. O 05:30 prebehne postupná animácia prebúdzania; po otvorení očí sa obnoví denný režim a následne sa v časových odstupoch spúšťajú náhodne vybrané animácie očí spolu s príslušnými gestami a svetlami.
 
 ## Zostavenie
 
