@@ -1,0 +1,29 @@
+name: Verify distribution
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify required project files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s README.md
+          test -s LICENSE
+          test -s CONTRIBUTING.md
+          test -s lib/oci/oci.ino
+          test -s lib/oci/tekvica.h
+          test -s lib/ramena/ramena.ino
+          test -s scad/chapadlo.scad
+          test -s scad/zostava_v_tekvici.scad
+          test -s zapojenie/pico_oci.png
+          test -s zapojenie/pico_ramena.png
+          test "$(find stl -maxdepth 1 -name '*.stl' | wc -l)" -ge 1
+          ! find . -type f -size +100M -print | grep -q .

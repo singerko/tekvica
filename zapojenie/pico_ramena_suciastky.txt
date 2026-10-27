@@ -1,0 +1,25 @@
+Zoznam súčiastok pre Pico B
+
+Elektronika
+
+Súčiastka	Ks	Kam
+Raspberry Pi Pico 2 (s kolíkmi)	1	riadi ruky aj LED pás
+Dutinková lišta 1×20 (pätica pre Pico)	2	aby sa Pico dalo vybrať
+Servo MG90S	4	S1–S4 na GP2–GP5
+Kolíková lišta (3 kolíky na servo)	4× 3 kolíky	konektory serv, hnedý vodič na GND
+LED pás 8× WS2812 („8-Bit 2812 RGB“)	1	DI → GP22, 4-7VDC → + lišta, GND → − lišta
+Kondenzátor 470 µF / 50 V	4	2× na každú lištu serv, pásik na −
+Rezistor 1 kΩ	2	do UART kábla k Pico A
+Kolíková lišta 3 kolíky	1	UART konektor (GP0, GP1, GND)
+Svorkovnica 2-pólová	1	prívod 5 V a GND pre servá
+Letovaný breadboard	1	
+
+Napájanie (káble k powerbanke)
+
+Súčiastka	Ks	Kam
+Powerbanka Xiaomi 20000	1	OUT 1 pre obe Pico, OUT 3 pre servá a LED pás
+USB-A vidlica na spájkovanie	2	kábel 1 a kábel 2
+Micro USB vidlica na spájkovanie	2	① do Pico B, ② do Pico A
+Dvojlinka 2× 0,5 mm²	~1 m	kábel 2: USB-A → svorkovnica serv
+Dvojlinka 2× 0,15 mm²	~2 m	kábel 1 a signálne vodiče
+Zmršťovacia bužírka 4 mm	~1 m	spoje pri vidliciach a rezistory v UART kábli

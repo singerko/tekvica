@@ -1,0 +1,30 @@
+# OS and editors
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Arduino build products
+build/
+*.elf
+*.hex
+*.bin
+*.uf2
+*.map
+*.eep
+*.d
+*.o
+
+# OpenSCAD temporary/export artifacts outside the curated stl directory
+*.csg
+*.bak
+*.tmp
+
+# Local tooling and caches
+.cache/
+__pycache__/
+*.pyc
+

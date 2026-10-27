@@ -1,0 +1,42 @@
+Zoznam súčiastok pre Pico A (oči)
+
+Elektronika
+
+Súčiastka	Ks	Poznámka / zapojenie
+Raspberry Pi Pico 2 (s kolíkmi)	1	riadi oba displeje, RTC a UART k Pico B
+Dutinková lišta 1×20 (pätica pre Pico)	2	aby sa Pico dalo vybrať
+Okrúhly TFT displej GC9A01, 1,28\", 240×240, SPI	2	oči; modul s pinmi GND, VCC, SCL, SDA, RES, DC, CS, BLK
+RTC modul DS3231	1	hodiny; SDA → GP4, SCL → GP5, napájanie 3,3 V
+Batéria CR2032	1	záložná batéria pre DS3231 (ak nie je súčasťou modulu)
+Rezistor 1 kΩ	2	sériovo do oboch UART vodičov medzi Pico A a Pico B
+Kondenzátor 470 µF / min. 6,3 V	1	medzi 3V3 a GND pri napájacom rozvode displejov; pásik na −
+Kolíková lišta 1×8	2	konektory oboch TFT displejov (ak nie sú osadené)
+Kolíková lišta 1×4	1	konektor RTC (ak nie je osadený)
+Kolíková lišta 1×3	1	UART konektor GP0, GP1, GND
+Letovaný breadboard / univerzálna DPS	1	montáž Pico, rozvodu 3V3/GND a konektorov
+
+Napájanie a kabeláž
+
+Súčiastka	Ks	Poznámka / zapojenie
+Powerbanka Xiaomi 20000	1	spoločná s Pico B; OUT 1 napája obe Pico podľa existujúcej schémy
+USB-A vidlica na spájkovanie	1	kábel z OUT 1 (ak sa kábel vyrába)
+Micro USB vidlica na spájkovanie	1	napájanie Pico A (ak sa kábel vyrába)
+Dvojlinka 2× 0,15 mm²	~1 m	napájací kábel 5 V/GND z powerbanky
+Prepojovacie vodiče 0,14–0,25 mm²	~4 m	SPI, I²C, BLK, UART a rozvod 3V3/GND; dĺžku prispôsobiť tekvici
+Zmršťovacia bužírka 3–4 mm	~1 m	izolácia spájkov a oboch UART rezistorov
+
+Voliteľný mechanický materiál
+
+Súčiastka	Ks	Poznámka
+Skrutky / dištančné stĺpiky pre DPS a moduly	podľa držiaka	mechanické upevnenie v 3D tlačenej zostave
+Sťahovacie pásky alebo textilná páska	niekoľko	odľahčenie káblov pri očiach
+
+Poznámky
+
+- Displeje a DS3231 napájaj z 3V3(OUT), nie z VBUS 5 V.
+- Všetky zeme (Pico A, oba TFT, RTC a Pico B) musia byť spoločné.
+- Oba TFT zdieľajú GP18/SCK a GP19/MOSI; MISO sa nepoužíva.
+- Každý TFT má vlastné RES, DC, CS a BLK podľa pico_oci.png.
+- Zoznam zahŕňa elektroniku pre oči. Powerbanka je spoločná so zoznamom Pico B, preto ju pri nákupe celej zostavy nepočítať dvakrát.
+- GP26 (pin 31) musí ostať voľný. Kód z neho pri štarte číta šum, aby boli náhodné gagy pri každom zapnutí iné (analogRead(26)). Keby tam niečo bolo zapojené, gagy by sa po každom zapnutí opakovali v rovnakom poradí. Teraz tam nič nie je, takže je to v poriadku.
+- Kód má SWAP_PHYSICAL_EYES=1: vetva TFT L/gfxL je fyzicky pravé oko a TFT R/gfxR fyzicky ľavé oko.

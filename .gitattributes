@@ -1,0 +1,11 @@
+*.stl binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.uf2 binary
+*.scad text eol=lf
+*.ino text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
