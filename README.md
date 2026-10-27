@@ -7,7 +7,7 @@ Animatronická halloweenska tekvica s dvoma okrúhlymi LCD očami, dvojicou lank
 - dosky spolu komunikujú cez UART – Pico A pri každom gagu povie Picu B, aké gesto a svetlo má urobiť.
 
 <p align="center">
-  <img src="obrazky/IMG_20261024_224829566_HDR.jpg" width="760" alt="Hotová animatronická tekvica s očami a chápadlami"><br>
+  <img src="obrazky/nahlad_na_zapojenu_tekvicu.png" width="760" alt="Hotová animatronická tekvica s očami a chápadlami"><br>
   <sub>Hotová mechanická a elektronická zostava pred vložením do tekvice.</sub>
 </p>
 
