@@ -287,61 +287,61 @@ Bez pripojených laniek spustite postupne `S=2` až `S=5` a zapíšte si, ktoré
 
 Gesto a svetlo, ktoré Pico A pošle pri každom gagu. Priradenie sa mení v tabuľkách `gagGesture` a `gagLight` v `oci.ino`.
 
-| G= | Gag | Chápadlá | Svetlo |
-|---:|---|---|---|
-| 0 | pohľad dopredu | – | sviečka |
-| 1 | pohľad vľavo hore | na konci pozdrav | sviečka |
-| 2 | pohľad vpravo hore | – | sviečka |
-| 3 | dve zrenice v jednom oku | – | sviečka |
-| 4 | kvetina | osmička | dúha |
-| 5 | mačacie oči | ruky hore | zelená |
-| 6 | arkanoid | osmička | dúha |
-| 7 | pumpovanie zreníc | – | sviečka |
-| 8 | hypno špirála | vlnenie | fialová |
-| 9 | skákajúce oči | načahovanie | sviečka |
-| 10 | vlna | 6–7 | modrá |
-| 11 | vyľakané pohľady | ruky hore | sviečka |
-| 12 | dýchanie zrenice | – | sviečka |
-| 13 | osmička | osmička | sviečka |
-| 14 | tekvičky | – | oheň |
-| 15 | Halloween nápis | – | oheň |
-| 16 | zlé šikmé oči | ruky hore | červená |
-| 17 | srdiečka | – | srdce |
-| 18 | prekvapené | kmitanie | slnko |
-| 19 | K.O. | – | slnko |
-| 20 | škúlenie | – | sviečka |
-| 21 | smutné so slzami | – | modrá |
-| 22 | krvavé žilky | ruky hore | červená |
-| 23 | pavúk | – | fialová |
-| 24 | netopiere | – | fialová |
-| 25 | ohnivé oči | ruky hore | oheň |
-| 26 | robot – skener | – | skener |
-| 27 | zombie | vlnenie | zelená |
-| 28 | sliz | zombík | zelená |
-| 29 | noc – mesiac a hviezdy | – | noc |
-| 30 | akvárium | plávanie prsia | modrá |
-| 31 | hracie automaty | – | dúha |
-| 32 | blesky | ruky hore | blesky |
-| 33 | kyklop | – | sviečka |
-| 34 | čarodejnica | – | fialová |
-| 35 | radar | – | zelená |
-| 36 | sviečka v oku | – | sviečka |
-| 37 | chápadlá v oku | osmička | fialová |
-| 38 | upír | ruky hore | červená |
-| 39 | vlkolak | – | noc |
-| 40 | kľúčová dierka | – | tma |
-| 41 | papuľa | ruky hore | červená |
-| 42 | matematický príklad | pri výsledku hej-hou | slnko, pri výsledku blikanie |
-| 43 | koľko je hodín? | pri čase hej-hou | slnko, pri čase blikanie |
-| 44 | portály | – | modrá |
-| 45 | obrie oko | zombík | sviečka |
-| 46 | dračie oči | zombík | oheň |
-| 47 | červené oči v tme | ruky hore | červené blikanie |
-| 48 | plamenné oči | ruky hore | oheň |
-| 49 | six-seven | 6–7 pri číslach | dúha |
-| 50 | autíčko s loopingom | krúženie dopredu | slnko |
-| 51 | odpočet a ohňostroj | pri výbuchu hurá-hurá | ohňostroj |
-| 52 | tekvička a kanál | – | sviečka |
+| G= | Náhľad očí | Gag | Chápadlá | Svetlo |
+|---:|---|---|---|---|
+| 0 | <img src="obrazky/gagy/g00.gif" width="200" alt="Gag 0"> | pohľad dopredu | – | sviečka |
+| 1 | <img src="obrazky/gagy/g01.gif" width="200" alt="Gag 1"> | pohľad vľavo hore | na konci pozdrav | sviečka |
+| 2 | <img src="obrazky/gagy/g02.gif" width="200" alt="Gag 2"> | pohľad vpravo hore | – | sviečka |
+| 3 | <img src="obrazky/gagy/g03.gif" width="200" alt="Gag 3"> | dve zrenice v jednom oku | – | sviečka |
+| 4 | <img src="obrazky/gagy/g04.gif" width="200" alt="Gag 4"> | kvetina | osmička | dúha |
+| 5 | <img src="obrazky/gagy/g05.gif" width="200" alt="Gag 5"> | mačacie oči | ruky hore | zelená |
+| 6 | <img src="obrazky/gagy/g06.gif" width="200" alt="Gag 6"> | arkanoid | osmička | dúha |
+| 7 | <img src="obrazky/gagy/g07.gif" width="200" alt="Gag 7"> | pumpovanie zreníc | – | sviečka |
+| 8 | <img src="obrazky/gagy/g08.gif" width="200" alt="Gag 8"> | hypno špirála | vlnenie | fialová |
+| 9 | <img src="obrazky/gagy/g09.gif" width="200" alt="Gag 9"> | skákajúce oči | načahovanie | sviečka |
+| 10 | <img src="obrazky/gagy/g10.gif" width="200" alt="Gag 10"> | vlna | 6–7 | modrá |
+| 11 | <img src="obrazky/gagy/g11.gif" width="200" alt="Gag 11"> | vyľakané pohľady | ruky hore | sviečka |
+| 12 | <img src="obrazky/gagy/g12.gif" width="200" alt="Gag 12"> | dýchanie zrenice | – | sviečka |
+| 13 | <img src="obrazky/gagy/g13.gif" width="200" alt="Gag 13"> | osmička | osmička | sviečka |
+| 14 | <img src="obrazky/gagy/g14.gif" width="200" alt="Gag 14"> | tekvičky | – | oheň |
+| 15 | <img src="obrazky/gagy/g15.gif" width="200" alt="Gag 15"> | Halloween nápis | – | oheň |
+| 16 | <img src="obrazky/gagy/g16.gif" width="200" alt="Gag 16"> | zlé šikmé oči | ruky hore | červená |
+| 17 | <img src="obrazky/gagy/g17.gif" width="200" alt="Gag 17"> | srdiečka | – | srdce |
+| 18 | <img src="obrazky/gagy/g18.gif" width="200" alt="Gag 18"> | prekvapené | kmitanie | slnko |
+| 19 | <img src="obrazky/gagy/g19.gif" width="200" alt="Gag 19"> | K.O. | – | slnko |
+| 20 | <img src="obrazky/gagy/g20.gif" width="200" alt="Gag 20"> | škúlenie | – | sviečka |
+| 21 | <img src="obrazky/gagy/g21.gif" width="200" alt="Gag 21"> | smutné so slzami | – | modrá |
+| 22 | <img src="obrazky/gagy/g22.gif" width="200" alt="Gag 22"> | krvavé žilky | ruky hore | červená |
+| 23 | <img src="obrazky/gagy/g23.gif" width="200" alt="Gag 23"> | pavúk | – | fialová |
+| 24 | <img src="obrazky/gagy/g24.gif" width="200" alt="Gag 24"> | netopiere | – | fialová |
+| 25 | <img src="obrazky/gagy/g25.gif" width="200" alt="Gag 25"> | ohnivé oči | ruky hore | oheň |
+| 26 | <img src="obrazky/gagy/g26.gif" width="200" alt="Gag 26"> | robot – skener | – | skener |
+| 27 | <img src="obrazky/gagy/g27.gif" width="200" alt="Gag 27"> | zombie | vlnenie | zelená |
+| 28 | <img src="obrazky/gagy/g28.gif" width="200" alt="Gag 28"> | sliz | zombík | zelená |
+| 29 | <img src="obrazky/gagy/g29.gif" width="200" alt="Gag 29"> | noc – mesiac a hviezdy | – | noc |
+| 30 | <img src="obrazky/gagy/g30.gif" width="200" alt="Gag 30"> | akvárium | plávanie prsia | modrá |
+| 31 | <img src="obrazky/gagy/g31.gif" width="200" alt="Gag 31"> | hracie automaty | – | dúha |
+| 32 | <img src="obrazky/gagy/g32.gif" width="200" alt="Gag 32"> | blesky | ruky hore | blesky |
+| 33 | <img src="obrazky/gagy/g33.gif" width="200" alt="Gag 33"> | kyklop | – | sviečka |
+| 34 | <img src="obrazky/gagy/g34.gif" width="200" alt="Gag 34"> | čarodejnica | – | fialová |
+| 35 | <img src="obrazky/gagy/g35.gif" width="200" alt="Gag 35"> | radar | – | zelená |
+| 36 | <img src="obrazky/gagy/g36.gif" width="200" alt="Gag 36"> | sviečka v oku | – | sviečka |
+| 37 | <img src="obrazky/gagy/g37.gif" width="200" alt="Gag 37"> | chápadlá v oku | osmička | fialová |
+| 38 | <img src="obrazky/gagy/g38.gif" width="200" alt="Gag 38"> | upír | ruky hore | červená |
+| 39 | <img src="obrazky/gagy/g39.gif" width="200" alt="Gag 39"> | vlkolak | – | noc |
+| 40 | <img src="obrazky/gagy/g40.gif" width="200" alt="Gag 40"> | kľúčová dierka | – | tma |
+| 41 | <img src="obrazky/gagy/g41.gif" width="200" alt="Gag 41"> | papuľa | ruky hore | červená |
+| 42 | <img src="obrazky/gagy/g42.gif" width="200" alt="Gag 42"> | matematický príklad | pri výsledku hej-hou | slnko, pri výsledku blikanie |
+| 43 | <img src="obrazky/gagy/g43.gif" width="200" alt="Gag 43"> | koľko je hodín? | pri čase hej-hou | slnko, pri čase blikanie |
+| 44 | <img src="obrazky/gagy/g44.gif" width="200" alt="Gag 44"> | portály | – | modrá |
+| 45 | <img src="obrazky/gagy/g45.gif" width="200" alt="Gag 45"> | obrie oko | zombík | sviečka |
+| 46 | <img src="obrazky/gagy/g46.gif" width="200" alt="Gag 46"> | dračie oči | zombík | oheň |
+| 47 | <img src="obrazky/gagy/g47.gif" width="200" alt="Gag 47"> | červené oči v tme | ruky hore | červené blikanie |
+| 48 | <img src="obrazky/gagy/g48.gif" width="200" alt="Gag 48"> | plamenné oči | ruky hore | oheň |
+| 49 | <img src="obrazky/gagy/g49.gif" width="200" alt="Gag 49"> | six-seven | 6–7 pri číslach | dúha |
+| 50 | <img src="obrazky/gagy/g50.gif" width="200" alt="Gag 50"> | autíčko s loopingom | krúženie dopredu | slnko |
+| 51 | <img src="obrazky/gagy/g51.gif" width="200" alt="Gag 51"> | odpočet a ohňostroj | pri výbuchu hurá-hurá | ohňostroj |
+| 52 | <img src="obrazky/gagy/g52.gif" width="200" alt="Gag 52"> | tekvička a kanál | – | sviečka |
 
 ## Prispôsobenie
 
