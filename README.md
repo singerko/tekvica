@@ -10,7 +10,7 @@ Pri realizácii bola použitá tekvica s priemerom približne **30 cm**. Pri ine
 
 <p align="center">
   <img src="obrazky/nahlad_na_zapojenu_tekvicu.png" width="760" alt="Hotová animatronická tekvica s očami a chápadlami"><br>
-  <sub>Hotová mechanická a elektronická zostava pred vložením do tekvice.</sub>
+  <sub>Hotová mechanická a elektronická zostava po vložení do tekvice.</sub>
 </p>
 
 ## Vyskúšajte si tekvicu online
