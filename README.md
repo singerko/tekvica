@@ -13,6 +13,15 @@ Pri realizácii bola použitá tekvica s priemerom približne **30 cm**. Pri ine
   <sub>Hotová mechanická a elektronická zostava pred vložením do tekvice.</sub>
 </p>
 
+## Vyskúšajte si tekvicu online
+
+Na stránke **[tekvica.premna.sk](https://tekvica.premna.sk)** je interaktívna 3D simulácia vytvorená podľa rovnakého kódu, aký beží v skutočnej tekvici. Môžete si otáčať scénu, spúšťať náhodné animácie alebo vybrať konkrétny gag a pozorovať oči, pohyb chápadiel aj svetelné efekty.
+
+<p align="center">
+  <a href="https://tekvica.premna.sk"><img src="obrazky/web_animacia.jpg" width="760" alt="Interaktívna 3D animácia halloweenskej tekvice na tekvica.premna.sk"></a><br>
+  <sub>Kliknutím na obrázok otvoríte interaktívnu ukážku na <a href="https://tekvica.premna.sk">tekvica.premna.sk</a>.</sub>
+</p>
+
 > [!CAUTION]
 > Servá a LED pás majú samostatnú 5 V napájaciu vetvu. **Servá nenapájajte z 3V3 ani z VBUS pinu Pica.** Obe Pico sa napájajú **iba cez micro USB**, piny VBUS a VSYS ostávajú nezapojené. Všetky vetvy musia mať spoločnú zem. Pred prvým pohybom nechajte lanká voľnejšie a skúšajte vždy iba jedno servo.
 
@@ -26,6 +35,7 @@ Pri realizácii bola použitá tekvica s priemerom približne **30 cm**. Pri ine
 | [`stl`](stl/) | hotové diely pripravené na 3D tlač |
 | [`zapojenie`](zapojenie/) | schémy zapojenia a samostatné zoznamy elektroniky |
 | [`obrazky`](obrazky/) | fotografie realizácie a náhľady 3D modelov |
+| [`web`](web/) | samostatná interaktívna 3D simulácia projektu |
 
 ## Ako projekt funguje
 
